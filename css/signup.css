@@ -1,0 +1,376 @@
+/* start header */
+html,body {
+  min-height: 100%;
+}
+.con{
+    background-image: url(../img/sign-up.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+/*
+    padding-top: 1.5rem;
+*/
+}
+
+.header{
+    text-transform:uppercase;
+    padding: 20px 15px;
+    font-size: 15px;
+    color:#fff;
+    margin: 0 100px;
+    }
+
+.header h2{
+    padding: 0 63px;
+    
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: -2px 2px #343a40;
+    letter-spacing: -2px;
+}
+
+
+
+.header a{
+    color: #fff;
+    padding: 5px 35px;
+    border: 1.3px solid #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition:all 0.3s;
+    border-radius: 3px;
+    margin-top:10px;
+    box-shadow: 0 6px 9px 0 rgba(19,19,19,0.13);
+    box-sizing: border-box;
+    
+    
+}
+.header a:hover{
+    color:#0079ff;
+    background-color: #fff;
+}
+
+/* end header */
+
+/* start signup-form */
+input:focus {
+    outline: none;
+}
+.signup-form{
+    padding:10px 0px 10px;;
+    
+    
+}
+.signup-form .desc{
+    padding:70px 25px;
+    color:#fff;
+    background-color: rgba(0,0,0,0.6);
+    
+    
+    
+}
+
+.signup-form .welcome{
+    font-size: 37px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family:open sans;
+}
+.signup-form  p{
+    padding: 2.5% 0;
+    line-height: 1.5em;
+    font-size: 19px;
+    
+}
+.signup-form .register {
+    padding: 8% 0;
+    bottom: 10px;
+    
+    
+}
+.signup-form .register:after{
+  color: #fff;
+ font-family: "fontawesome";
+  content: "\f061";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.signup-form .form{
+    background-color: #fff;
+    height:550px;
+    padding-top: 5%;
+}
+.signup-form form{
+    
+    padding-top: 5%;
+}
+.form input{
+    padding:0;
+    margin: 0;
+    border:none;
+    font-family:Roboto,Comic Sans MS;
+    font-size:16px;
+    bottom: 0;
+    color:black;
+    width: 100%;
+    line-height: 2em;
+    
+    margin-bottom: 35px;
+    background: transparent;
+   border-bottom: 1px solid black;
+    position:relative;
+    z-index: 1;
+
+}
+.form input.password{
+       margin-bottom: -5px;
+
+}
+
+
+.form input:focus{
+    border-bottom:1.5px solid #0079ff;
+    
+}
+
+input.submit{
+    float: right;
+    margin-right:  30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    
+}
+
+.fname .placeholder {
+  position: absolute;
+  left: 16px;
+  top: 115px;
+    color:#576574;
+    font-family:Roboto,Comic Sans MS;
+    z-index: 0;
+     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.fname:focus ~ .placeholder,
+.fname:valid ~ .placeholder {
+  top: 95px;
+    font-size: 11px;
+}
+
+
+@media (min-width: 515px) and (max-width: 991.95px) {
+    .fname .placeholder {
+  top: 95px;
+}.fname:focus ~ .placeholder,
+.fname:valid ~ .placeholder {
+  top: 75px;
+}
+}
+@media (min-width: 350px) and (max-width: 514.99px) {
+    .fname .placeholder {
+  top: 80px;
+}.fname:focus ~ .placeholder,
+.fname:valid ~ .placeholder {
+  top: 60px;
+}
+}
+@media (min-width: 200px) and (max-width: 349.99px) {
+    .fname .placeholder {
+  top: 70px;
+}.fname:focus ~ .placeholder,
+.fname:valid ~ .placeholder {
+  top: 50px;
+}
+}
+
+
+.lname .placeholder {
+  position: absolute;
+  left: 16px;
+  top: 182px;
+    color:#576574;
+    font-family:Roboto,Comic Sans MS;
+    z-index: 0;
+     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.lname:focus ~ .placeholder,
+.lname:valid ~ .placeholder {
+  top: 162px;
+    font-size: 11px;
+}
+@media (max-width: 991.98px) { 
+  .lname .placeholder {
+  top: 162px;
+}.lname:focus ~ .placeholder,
+.lname:valid ~ .placeholder {
+  top: 142px;
+}  
+}
+
+@media (min-width: 515px) and (max-width: 991.95px) {
+    .lname .placeholder {
+  top: 162px;
+}.lname:focus ~ .placeholder,
+.lname:valid ~ .placeholder {
+  top: 142px;
+}
+}
+@media (min-width: 350px) and (max-width: 514.99px) {
+    .lname .placeholder {
+  top: 142px;
+}.lname:focus ~ .placeholder,
+.lname:valid ~ .placeholder {
+  top: 125px;
+}
+}
+@media (min-width: 200px) and (max-width: 349.99px) {
+    .lname .placeholder {
+  top: 130px;
+}.lname:focus ~ .placeholder,
+.lname:valid ~ .placeholder {
+  top: 125px;
+}
+}
+
+.email .placeholder {
+  position: absolute;
+  left: 16px;
+  top: 251px;
+    color:#576574;
+    font-family:Roboto,Comic Sans MS;
+    z-index: 0;
+     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 5ms;
+}
+.email:focus ~ .placeholder,
+.email:valid ~ .placeholder {
+  top: 227px;
+    font-size: 11px;
+}
+
+@media (min-width: 515px) and (max-width: 991.95px) {
+    .email .placeholder {
+  top:231px;
+}.email:focus ~ .placeholder,
+.email:valid ~ .placeholder {
+  top: 210px;
+}
+}
+@media (min-width: 350px) and (max-width: 514.99px) {
+    .email .placeholder {
+  top: 220px;
+}.email:focus ~ .placeholder,
+.email:valid ~ .placeholder {
+  top: 200px;
+}
+}
+@media (min-width: 200px) and (max-width: 349.99px) {
+    .email .placeholder {
+  top: 210px;
+}.email:focus ~ .placeholder,
+.email:valid ~ .placeholder {
+  top: 180px;
+}
+}
+
+.uname .placeholder {
+  position: absolute;
+  left: 16px;
+  top: 318px;
+    color:#576574;
+    font-family:Roboto,Comic Sans MS;
+    z-index: 0;
+     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.uname:focus ~ .placeholder,
+.uname:valid ~ .placeholder {
+  top: 300px;
+    font-size: 11px;
+}
+@media (min-width: 515px) and (max-width: 991.95px) {
+    .uname .placeholder {
+  top:289px;
+}.uname:focus ~ .placeholder,
+.uname:valid ~ .placeholder {
+  top: 275px;
+}
+}
+@media (min-width: 350px) and (max-width: 514.99px) {
+    .uname .placeholder {
+  top: 280px;
+}.uname:focus ~ .placeholder,
+.uname:valid ~ .placeholder {
+  top: 270px;
+}
+}
+@media (min-width: 200px) and (max-width: 349.99px) {
+    .uname .placeholder {
+  top: 265px;
+}.uname:focus ~ .placeholder,
+.uname:valid ~ .placeholder {
+  top: 250px;
+}
+}
+
+.password .placeholder {
+  position: absolute;
+  left: 16px;
+  top: 385px;
+    color:#576574;
+    font-family:Roboto,Comic Sans MS;
+    z-index: 0;
+     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.password :focus ~ .placeholder,
+.password :valid ~ .placeholder {
+  top: 365px;
+    font-size: 11px;
+}
+@media (min-width: 515px) and (max-width: 991.95px) {
+    .password .placeholder {
+  top:365px;
+}.password:focus ~ .placeholder,
+.password:valid ~ .placeholder {
+  top: 354px;
+}
+}
+@media (min-width: 350px) and (max-width: 514.99px) {
+    .password .placeholder {
+  top: 345x;
+}.password:focus ~ .placeholder,
+.password:valid ~ .placeholder {
+  top: 340px;
+}
+}
+@media (min-width: 200px) and (max-width: 349.99px) {
+    .password .placeholder {
+  top: 335px;
+}.password:focus ~ .placeholder,
+.password:valid ~ .placeholder {
+  top: 325px;
+}
+}
+
+label.custom-control-label::after{
+    
+    
+}
+label.custom-control-label{
+font-size: 15px;
+padding-bottom: 10px;}
+
+button{
+    float: right;
+    margin-right:  30px;
+    margin-bottom: 20px;
+}
+
+/* end signup-form */
+

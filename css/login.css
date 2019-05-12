@@ -1,0 +1,245 @@
+/*start navbar */
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar-brand{
+    margin-right: 40px;
+}
+.navbar-brand > span{  /* direct child */
+    font-size: 30px;
+    width: 200px;
+}
+.navbar-brand span:first-child{
+    color:#0079ff;
+    font-weight: bold;
+}
+.navbar-brand span:last-child{
+    color:white;
+}
+.navbar-nav .nav-link{
+    font-size: 15px;
+    text-transform: uppercase;
+    
+    color:white !important;
+    font-weight:500;
+    
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.navbar-nav  .active > .nav-link,
+.navbar-nav  .nav-link:hover{ /* هون لازم نقتنص الباث بالزبط يعني نحط بالاول .navbar-light
+                                      لو ما حطيناها لازم نحط امبورتنت عشان يعمل اوفرايد عاللي هو عامله */
+      color:#0079ff !important;
+}
+
+.navbar .collapse .navbar-nav .dropdown a::after{
+    content: none;
+    display:none; 
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu{
+    background-color:#343a40; /* rgba(0,0,0,0.6);*/
+    border:none;
+    border-radius: none;
+    
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a{
+    color:#fff;
+   
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a:hover{
+    background-color: #007bff;
+   
+}
+.sign{
+    
+    display: inline-block;
+    font-size: 15px;
+    
+    right: 15px;;
+}
+.sign a{
+    color: white;
+    border: 1.5px solid #007bff;
+    padding: 7px 12px;
+    margin-left: 7px;
+    text-decoration: none;
+}
+.sign a:hover{
+    background-color: white;
+    color: #007bff;
+  border:none;}
+.sideMenu.open
+    
+    display:block;
+    overflow-y: auto;
+    left:0;
+}
+
+.sideMenu ul{
+    margin: 0;
+    padding: 0 15px;;
+    
+}
+
+/* end navbar */
+
+html,body {
+  min-height: 100%;
+}
+body{
+    background-image: url(../img/signin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+            
+}
+.log-in h1{
+    color:white;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 490px) and (max-width: 767.98px) {
+    .log-in h1{
+        font-size: 30px;
+    }
+    .log-in{
+        padding-top: 50px;
+    }
+    .login-form{
+    padding-left: 25px;
+        
+}
+    .login-form  input{
+    
+    width: 50%;
+    line-height: 1.5em;
+    border-bottom: 1px solid #95a5a6;
+    padding-left: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    }
+    .login-form  input:active,
+    .login-form  input:focus{
+        border-bottom: 1.3px solid #0079ff;
+}
+  input.submit{
+    padding: 10px 15px;
+    margin: 27px 0px 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25%;
+    background-color: #007bff;
+    color: white;
+    
+}  
+
+}
+@media (min-width: 200px) and (max-width: 489.99px) {
+    .log-in h1{
+        font-size: 20px;
+    }
+    .log-in{
+        padding-top: 40px;
+    }
+    .login-form{
+    padding-left: 20px;
+        
+}
+    .login-form  input{
+    
+    width: 70% !important;
+    padding-left: 3px!important;
+    font-size: 12px;
+    font-weight: 400 !important;
+    }
+    
+  input.submit{
+    padding: 6px 8px !important;
+    margin: 27px 0px 15px;
+    font-size: 13px !important; 
+    font-weight: 400;
+    width: 25% !important;
+    
+    
+}
+    a,
+a:hover{
+    padding-left: 3px !important;
+    font-size: 16px !important;
+    
+}
+a.not-member,
+a.not-member:hover{
+    font-weight: 400;
+   
+}
+
+}
+.login-form{
+    padding-left: 35px;
+}
+.login-form label{
+    color: white;
+    font-size: 18px;
+    /* padding-bottom: 0; */
+    margin-bottom: 2px;
+}
+
+.login-form  input{
+    background-color: #f5f6fa;
+    border: none;
+    width: 90%;
+    line-height: 2.2em;
+    border-bottom: 1px solid #95a5a6;
+    padding-left: 7px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.login-form  input:active,
+.login-form  input:focus{
+    border-bottom: 1.3px solid #0079ff;
+}
+.login-form .username{
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 15px 30px;
+    margin: 27px 0px 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+input.submit{
+    padding: 15px 30px;
+    margin: 27px 0px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30%;
+    background-color: #007bff;
+    color: white;
+    
+}
+a,
+a:hover{
+    padding-left: 15px;
+    font-size: 19px;
+    color: #fff; 
+    text-decoration: none ;
+    top:0;
+}
+a.not-member,
+a.not-member:hover{
+    font-weight: 500;
+    margin-top: 0;
+    padding-left: 0;
+}

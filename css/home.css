@@ -1,0 +1,307 @@
+/*start navbar */
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar-brand{
+    margin-right: 40px;
+}
+.navbar-brand > span{  /* direct child */
+    font-size: 30px;
+    width: 200px;
+}
+.navbar-brand span:first-child{
+    color:#0079ff;
+    font-weight: bold;
+}
+.navbar-brand span:last-child{
+    color:white;
+}
+.navbar-nav .nav-link{
+    font-size: 15px;
+    text-transform: uppercase;
+    
+    color:white !important;
+    font-weight:500;
+    
+}
+.navbar-nav  .active > .nav-link,
+.navbar-nav  .nav-link:hover{ /* هون لازم نقتنص الباث بالزبط يعني نحط بالاول .navbar-light
+                                      لو ما حطيناها لازم نحط امبورتنت عشان يعمل اوفرايد عاللي هو عامله */
+      color:#0079ff !important;
+}
+
+.navbar .collapse .navbar-nav .dropdown a::after{
+    content: none;
+    display:none; 
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu{
+    background-color:#343a40; /* rgba(0,0,0,0.6);*/
+    border:none;
+    border-radius: none;
+    
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a{
+    color:#fff;
+   
+}
+.navbar .collapse .navbar-nav .dropdown .dropdown-menu a:hover{
+    background-color: #007bff;
+   
+}
+.sign{
+    
+    display: inline-block;
+    font-size: 15px;
+    
+    right: 15px;;
+}
+.sign a{
+    color: white;
+    border: 1.5px solid #007bff;
+    padding: 7px 12px;
+    margin-left: 7px;
+    text-decoration: none;
+}
+.sign a:hover{
+    background-color: white;
+    color: #007bff;
+  border:none;}
+.sideMenu.open
+    
+    display:block;
+    overflow-y: auto;
+    left:0;
+}
+
+.sideMenu ul{
+    margin: 0;
+    padding: 0 15px;;
+    
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+/* end navbar */
+
+
+/*       start slider    */
+.slider{
+    background-color: #DDD;
+    margin-top: 70px;
+    
+}
+.slider .carousel-inner{ /* لحتى الهيدر يجي بمكانه الصح فبنعمل للبيرنت اللي لاله*/
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.caption{
+    
+}
+.slider .carousel-inner h3{
+    position: absolute; /*  عشان يطلع من منطقة الوورك*/
+    color: #007bff;
+    z-index: 3; /* لحتى يجي فوق ال overlay*/
+    font: 700 42px 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    left: 40px;
+    top: 135px;
+    width: 50%;
+    background-color: transparent;
+    
+}
+
+.slider .carousel-inner h3 p{
+    
+    /*width: 50%;
+    display: inline-block;
+    
+    font-size: 18px;
+    color: white;
+    top: 200px;;*/
+    margin-top: 10px;
+    font: 18px 'Poppins', sans-serif;
+    color: white;
+    width: 85%;
+    line-height: 2;
+    
+    
+    z-index: 3; 
+    
+}
+@media (min-width: 750px) and (max-width: 993px) {
+    .slider .carousel-inner h3{
+        font: 600 40px 'Poppins', sans-serif !important;
+        margin-bottom: 12px !important;
+        top: 130px !important;
+        width: 70% !important;
+    }
+    .slider .carousel-inner h3 p{
+        margin-top: 15px !important;
+        font: 18px 'Poppins', sans-serif !important;
+        width: 88%;
+        line-height: 2;
+        padding-left:10px !important;
+
+
+        z-index: 3; 
+    
+}
+}
+@media (min-width: 200px) and (max-width: 749.99px) {
+    .slider .carousel-inner h3{
+        font: 600 30px 'Poppins', sans-serif !important;
+        margin-bottom: 12px !important;
+        top: 130px !important;
+        width: 90% !important;
+        left: 15px !important;
+        text-align: center !important;
+    }
+    .slider .carousel-inner h3 p{
+        margin-top: 15px !important;
+        font: 16px 'Poppins', sans-serif !important;
+        width: 88%;
+        line-height: 2;
+       text-align: center !important;
+
+
+        z-index: 3; 
+    
+}
+}
+
+.slider .carousel-inner .overlay{
+    position:absolute; 
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2; // لحتى يجي فوق الصورة وتحت الانديكيتر
+}
+   
+
+.carousel-item{
+    background-size: cover;
+}
+.carousel-one{ /* لما شلنا الصورة من الديف صار الهايت صفر للايتم فلازم نحدد طوله لهيك حطيناه انه قد طول السلايد محطوط هاد الحكي بال js*/
+    background-image: url('../img/slide1.jpg');
+}
+
+.carousel-two{
+    background-image: url('../img/slide2.jpg') ;
+}
+.carousel-three{
+    background-image: url('../img/slide3.jpg');
+}
+
+.slider .carousel-indicators{
+    height: 8px;
+    cursor: pointer;
+    
+}
+
+/* End slider */
+
+
+.feature img{
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+ .feature p{
+     margin-bottom: 40px;
+}
+
+
+
+/* End feature  */
+
+
+/* start overview */
+
+.overview{
+    background-color: #f0f5f7;
+    padding: 100px 0;
+}
+
+.overview h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #007bff;
+}
+
+@media (max-width: 992px) { 
+  .overview h2{
+      font-size: 30px;
+      margin-bottom: 15px;
+    }  
+}
+
+.overview p{
+    line-height: 1.8;
+    font-size: 20px;
+    width: 80%;
+    margin:0 auto 20px;
+    color:#6a6a6a;
+  
+}
+
+@media (max-width: 992px) { 
+  .overview p{
+      width: 100%;
+    }  
+}
+
+.overview h4{
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #8b8a8a;
+    margin-bottom: 40px;
+}
+.overview button{
+    text-transform: uppercase;
+    background-color:transparent; 
+    color:#999;
+    padding:10px 10px;
+    font-size:20px;
+    border: 2px solid #fff;
+}
+.overview button:hover{
+    background-color:#007bff;
+    color:white;
+}
+/* End overview */
+
+
+
+
+
+
+
+
+.copyright{
+    border-top: 1px solid #C0C0c0;
+    padding: 20px;
+}
+.copyright div{
+    color: #007bff; 
+}
+.copyright ul{
+    margin: 0;
+}
+.copyright ul li {
+    display: inline-block;
+}
+.copyright ul li a{
+    color:#007bff;
+    margin-left: 20px;
+    font-size: 17px;
+}

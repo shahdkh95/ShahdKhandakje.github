@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--Required meta tags -->
+        <meta charset="utf-8">
+        <metaname="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></metaname>
+        <title> Sign Up to PSLIVE</title>
+        <!--Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/signup.css"> 
+       <link rel="stylesheet" href="css/font-awesome.css">
+    </head>
+    <body>
+        <div class="con">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center text-md-left">
+                        <h2>PSLIVe</h2>
+                    </div>
+                    <div class="col text-center text-md-right">
+                        <a href="login.html">sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="signup-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 desc text-left">
+                        <h3 class="welcome ">Welcom to PSLIVE..<br> <span >any time, any where you can meet Doctor's</span></h3>
+                        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h3 class="register">Register today</h3>
+                        
+                    </div>
+                    <div class="col-md-5 form text-left">
+                        <h3>Let's start</h3>
+                        <form name="Form" method="post" id="mform" action="login.html">
+                            <div class="fname">
+                                <input required type="text" class="fname" name="fname" id="fname"required="required"><br>
+                                <span class="placeholder">First Name</span>
+                            </div>
+                            <div class="lname">
+                                 <input required type="text" class="lname" name="lname" id="lname" required="required" ><br>
+                                 <span class="placeholder">Last Name</span>
+                            </div>
+                            <div class="email">
+                                 <input required type="email" class="email" name="email" id="email" required="required" ><br>
+                                 <span class="placeholder">Your active email</span>
+                            </div>
+                            <div class="uname">
+                                <input required type="text" class="uname" name="uname" id="uname"  required="required"><br>
+                                <span class="placeholder">Create your username</span>
+                            </div>
+                            <div class="password">
+                                <input required type="password" class="password" id="password"  required="required"><br>
+                                <span class="placeholder">Create a password</span>
+                            </div>
+                            <!-- Default checked -->
+                <div class="custom-control custom-checkbox check">
+                  <input type="checkbox" class="custom-control-input show" id="defaultChecked2" >
+                  <label class="custom-control-label" for="defaultChecked2">show password</label>
+                    
+                </div>
+    
+                            <!--<div style="display: flex ; justify-content:flex-end;right: 0; width: 100%">
+                            
+                            <label class="show" for="show-password">show password</label>
+                                </div> <br>
+                          -->
+                        <input type="submit" class="submit" onclick="myFunction()" value="Sign up" />
+                          <!--<button type="submit" id="btn" onclick="myFunction()" class="btn btn-primary"><a href="patient.html" style="color: white"> Sign up</a> </button>-->
+                            <div id="check" style="display: block"></div>
+                            
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+        
+          <script>
+
+
+               
+
+    document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    
+  };
+})(), true);
+            function myFunction() {
+  var uname = document.getElementById("uname"),
+      fname = document.getElementById("fname"),
+      lname = document.getElementById("lname"),
+      email = document.getElementById("email"),
+      form= document.getElementById("form"),
+      pass = document.getElementById("password"),
+      validdiv= document.getElementById("check");
+  if (!uname.checkValidity() ||!fname.checkValidity() ||!lname.checkValidity() ||!password.checkValidity() ||!email.checkValidity() ) {
+      document.getElementById("check").innerHTML = "<span style='color:red; font-size:15px;' > Incorrect input. Please try again.</span>";
+      return false;
+  } else {
+      document.getElementById("mform").submit();
+      return true;
+  } 
+}   
+</script>
+        
+    <!--jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+         
+    </body>
+</html> 

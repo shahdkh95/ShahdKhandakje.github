@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--Required meta tags -->
+        <meta charset="utf-8">
+        <metaname="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></metaname>
+        <title> Login </title>
+        <!--Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/login.css"> 
+       <link rel="stylesheet" href="css/font-awesome.css">
+    </head>
+    <body>
+        
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
+  <a class="navbar-brand text-left" href="#">
+                  <span>PS</span><span>LIVE</span>
+              </a>
+  <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      providers 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Our Providers</a>
+                      <a class="dropdown-item" href="doctor-form.html">Become a provider</a>
+                    </div>
+                  </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Resources
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">BLOG</a>
+                      <a class="dropdown-item" href="#">NEWs and media</a>
+                      <a class="dropdown-item" href="#">BRESSROOM</a>
+                    </div>
+                  </li>
+                  <li class="nav-item pl-2">
+                    <a class="nav-link " href="#">Contact</a>
+                  </li>
+    </ul>
+    <div class="sign">
+                  
+                  <a href="sign-up.html">JOIN NOW</a>
+           </div>
+  </div>
+</nav>  
+        <div class="log-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 ">
+                        <h1><strong>Sign in to start your visit</strong> </h1>
+                        <form class="login-form" name="Form" method="post" id="mform" action="patient.html"> 
+                             <label for="uname">User name or Email</label><br>
+                             <input type="text" class="username" name="uname" id="uname"  required="required"><br>
+                            
+                             <label for="password">Password</label><br>
+                             <input type="password" class="password" name="password" id="password" required="required"><br>
+                            <!--<button type="submit" id="btn" onclick="myFunction()" class="btn btn-primary"><a href="patient.html">Sign in </a> </button>-->
+                            <input type="submit" class="submit" onclick="myFunction()" value="log in" />
+                            <a href="login.html"  >Forgot Username or Password?</a> <br>
+                            <a href="sign-up.html" class="not-member">Not a member? Sign up for free.</a>
+                            <div id="check"></div>
+                        </form>      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+
+    document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    
+  };
+})(), true);
+            function myFunction() {
+  var uname = document.getElementById("uname"),
+      form= document.getElementById("form"),
+      pass = document.getElementById("password"),
+      validdiv= document.getElementById("check");
+  if (!uname.checkValidity() || !pass.checkValidity() ) {
+      document.getElementById("check").innerHTML = "<span style='color:red; font-size:18px;' > Incorrect Username or Password. Please try again.</span>";
+      return false;
+  } else {
+      document.getElementById("mform").submit();
+      return true;
+  } 
+}   
+           
+            
+    
+        
+    
+</script>
+        
+        
+        
+        
+        
+        
+    <!--jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html> 

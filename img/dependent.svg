@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+  <title>3248A67F-7121-42E0-8057-18DEBD95ADF2</title>
+  <desc>Created with sketchtool.</desc>
+  <defs>
+    <circle id="path-1" cx="34.875" cy="34.875" r="34.875"></circle>
+  </defs>
+  <g id="web-patient" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Home-KR-v2-blue-bg-newadd" transform="translate(-467.000000, -353.000000)">
+      <g id="Group-8" transform="translate(419.000000, 318.000000)">
+        <g id="Group-4" transform="translate(48.000000, 35.000000)">
+          <circle id="Oval-7" fill="#133853" cx="37.125" cy="37.125" r="37.125"></circle>
+          <g id="Fill-1" transform="translate(2.250000, 2.250000)">
+            <mask id="mask-2" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <path d="M42.0749336,51.0223972 L41.9568775,44.4361505 C48.5069846,46.4752287 57.2351067,43.7519068 53.5022845,42.4018909 C51.9265967,41.8324909 50.4561153,40.1483842 49.2088965,38.203269 C50.3709864,33.2794452 54.6226131,10.75 35.0236903,10.75 C15.7837545,10.75 20.276312,31.7342753 21.7082445,37.0018271 C20.3236951,39.4263947 18.582568,41.7176472 16.6896545,42.4018909 C12.8427917,43.7928651 22.2246396,46.6406679 28.823736,44.2361779 L28.823736,50.5742658 C28.823736,50.5742658 9.71711529,51.8536087 9.75004251,58.2503232 C9.83838383,75.4262846 59.3777852,76.8003936 61.6176392,59.0815347 C62.4175296,52.7490684 42.0749336,51.0223972 42.0749336,51.0223972 Z" id="Stroke-3" fill="#133853" mask="url(#mask-2)"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

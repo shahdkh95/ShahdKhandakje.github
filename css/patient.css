@@ -1,0 +1,140 @@
+html,body {
+  min-height: 100%;
+}
+
+
+li.logo{
+    margin-top: 13% !important;
+    margin-bottom: 10%!important;
+    font-size: 40px;
+    width: 90% !important;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+}
+li.logo:hover{
+    text-decoration: none;}
+li span:first-child{
+    color:#0079ff;
+    font-weight: bold;
+}
+li span:last-child{
+   color: black;
+}
+
+.container-fluid .collapse .nav .nav-item  .nav-link,
+.app-title{ 
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #77787b;
+    font-family:'Catamaran', sans-serif;
+    transition: all  0.5 ease-in-out;
+}
+.app-title{
+    margin-bottom: 7% !important;}
+.container-fluid .collapse .nav .nav-item  :hover{ 
+    background-color: #95a5a6;
+    color: #77787b;
+    font-family:'Catamaran', sans-serif;
+    color: white;
+}
+li.icon:hover{
+    background-color: #95a5a6;
+border-radius: 50%;}
+
+ 
+.collapse{
+     background-color:   #f7f7f7;
+     }
+
+
+.content{
+   background-color: #0a446f;
+   color: white;
+   padding-top: 20px;
+   padding-left: 50px;;
+            }
+.content .location::before{
+    display: inline-block;
+    content: "\f041";
+    font-family: FontAwesome;
+    vertical-align: middle;
+    font-size: 25px;
+    margin-right: 10px;
+}
+select option{
+    color:black;
+}
+
+
+
+/*.side{
+    background-color: #f7f7f7;
+    width: 200px;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    padding-top: 30px;
+    transition:all 0.3s cubic;
+    
+}
+@media (max-width: 991.98px) {
+    .side{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    
+}
+.patient .logo{
+    width:80%;
+    margin: auto;
+    padding-bottom: 40px;
+    
+}
+
+.patient .menu{
+    
+}
+
+.patient .menu li{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #77787b
+}
+.appointement span{
+   font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top:40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #77787b
+}
+.appointement{
+   margin-top: 55px;
+}
+
+
+/* start main>  
+
+.main{
+    margin-left: 220px;
+}
+.main span::before{
+        display: inline-block;
+    content: "\f041";
+    font-family: FontAwesome;
+    vertical-align: middle;
+    font-size: 25px;
+    margin-right: 10px;
+} */
